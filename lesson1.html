@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRACTICE - 4B-EBOOK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #fdfdfd;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 60px;
+      background-color: #0b1d3a; /* Navy Blue */
+      border-right: 1px solid #0b1d3a;
+      transition: width 0.3s ease;
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    .sidebar:hover {
+      width: 240px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover img {
+      transform: scale(1.1);
+    }
+
+    .logo h2 {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      opacity: 1; /* Always visible */
+      transition: opacity 0.3s ease;
+    }
+
+    .nav-links {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .nav-links li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+      cursor: pointer;
+      color: #cfd8e3;
+      transition: 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links li i {
+      font-size: 18px;
+      color: #ffffff;
+      width: 30px;
+      text-align: center;
+    }
+
+    .nav-links li span {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .sidebar:hover .nav-links li span {
+      opacity: 1;
+    }
+
+    .nav-links li:hover,
+    .nav-links li.active {
+      background-color: #1b3a6f;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .nav-links li:hover i,
+    .nav-links li.active i {
+      color: #fff;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {
+      flex: 1;
+      margin-left: 100px;
+      padding: 40px;
+      transition: margin-left 0.3s ease;
+    }
+
+    .sidebar:hover ~ .main-content {
+      margin-left: 240px;
+    }
+
+    header h1 {
+      color: #0b1d3a;
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    /* QUIZ SECTION */
+    .quiz-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+
+    .question {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0b1d3a;
+      margin-bottom: 20px;
+    }
+
+    .options label {
+      display: block;
+      background-color: #e6ecfa;
+      border: 2px solid #c3d0f0;
+      padding: 12px 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .options input {
+      display: none;
+    }
+
+    .options label:hover {
+      background-color: #1b3a6f;
+      color: #fff;
+      border-color: #1b3a6f;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      background-color: #0b1d3a;
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #102a52;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="landing.html" class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" alt="logo">
+      <h2>BSOA LEARNING</h2>
+    </a>
+    <ul class="nav-links">
+      <li onclick="window.location.href='learn.html'"><i class="fas fa-book"></i> <span>LEARN</span></li>
+      <li class="active" onclick="window.location.href='practice.html'"><i class="fas fa-pencil-alt"></i> <span>PRACTICE</span></li>
+      <li onclick="window.location.href='about.html'"><i class="fas fa-info-circle"></i> <span>ABOUT</span></li>
+    </ul>
+  </div>
+
+ </body>
+</html>
