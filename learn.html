@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subjects</title>
+  <title>4B-EBOOK | Subjects</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -169,7 +169,7 @@
       margin-right: 20px;
     }
 
-    /* Navy color variations */
+    /* Color Variations */
     .navy { background-color: #1e3d7c; }
     .blue-light { background-color: #4a74d3; }
     .sky { background-color: #67a8ff; }
@@ -178,6 +178,10 @@
     .aqua { background-color: #66b2ff; }
     .blue-dark { background-color: #1b4b91; }
     .navy-deep { background-color: #162447; }
+    .royal { background-color: #2a3fa3; }
+    .indigo { background-color: #3c53a4; }
+    .midnight { background-color: #0b2245; }
+    .cyan { background-color: #22a6b3; }
 
     .details {
       flex: 1;
@@ -228,8 +232,9 @@
       <h2>BSOA LEARNING</h2>
     </a>
     <ul class="nav-links">
-      <li onclick="window.location.href='learn.html'"><i class="fas fa-book"></i> <span>LEARN</span></li>
-      <li onclick="window.location.href='practice.html'"><i class="fas fa-pencil-alt"></i> <span>PRACTICE</span></li>
+      <li class="active" onclick="window.location.href='learn.html'"><i class="fas fa-book-open"></i> <span>SUBJECTS</span></li>
+      <li onclick="window.location.href='quiz.html'"><i class="fas fa-question-circle"></i> <span>QUIZZES</span></li>
+      <li onclick="window.location.href='practice.html'"><i class="fas fa-laptop-code"></i> <span>PRACTICE</span></li>
       <li onclick="window.location.href='about.html'"><i class="fas fa-info-circle"></i> <span>ABOUT</span></li>
     </ul>
   </div>
@@ -237,85 +242,123 @@
   <!-- Main Content -->
   <div class="main-content">
     <header>
-      <h1>Subjects</h1>
+      <h1>Choose a Subject to Begin Learning</h1>
     </header>
 
     <section class="subjects">
+      <!-- SUBJECT LIST -->
       <div class="subject">
         <div class="icon navy"><i class="fas fa-scale-balanced"></i></div>
         <div class="details">
-          <h3>Subject 1: Business Law</h3>
+          <h3>Business Law</h3>
           <p>Understand the fundamentals of business-related legal principles and regulations.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='businesslaw.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='businesslaw.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon blue-light"><i class="fas fa-coins"></i></div>
         <div class="details">
-          <h3>Subject 2: Accounting Principles</h3>
+          <h3>Accounting Principles</h3>
           <p>Learn the key accounting concepts used in financial and managerial decision-making.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='accounting.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='accounting.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon sky"><i class="fas fa-file-contract"></i></div>
         <div class="details">
-          <h3>Subject 3: Legal Office Procedure</h3>
+          <h3>Legal Office Procedure</h3>
           <p>Discover proper documentation, filing, and workflow in legal office environments.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='legalprocedure.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='legalprocedure.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon teal"><i class="fas fa-keyboard"></i></div>
         <div class="details">
-          <h3>Subject 4: Keyboarding</h3>
+          <h3>Keyboarding</h3>
           <p>Improve typing speed and accuracy essential for administrative work.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='keyboarding.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='keyboarding.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon blue"><i class="fas fa-language"></i></div>
         <div class="details">
-          <h3>Subject 5: Foreign Language (French)</h3>
+          <h3>Foreign Language (French)</h3>
           <p>Develop communication skills in French with focus on vocabulary and pronunciation.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='french.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='french.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon aqua"><i class="fas fa-tasks"></i></div>
         <div class="details">
-          <h3>Subject 6: Project Management</h3>
+          <h3>Project Management</h3>
           <p>Gain practical knowledge in managing tasks, deadlines, and resources effectively.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='projectmanagement.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='projectmanagement.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon blue-dark"><i class="fas fa-calendar-check"></i></div>
         <div class="details">
-          <h3>Subject 7: Events Management</h3>
+          <h3>Events Management</h3>
           <p>Plan, organize, and execute professional events and conferences successfully.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='events.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='events.html'">EXPLORE!</button>
       </div>
 
       <div class="subject">
         <div class="icon navy-deep"><i class="fas fa-microphone-alt"></i></div>
         <div class="details">
-          <h3>Subject 8: Stenographer</h3>
+          <h3>Stenographer</h3>
           <p>Learn shorthand techniques and transcription accuracy for professional use.</p>
         </div>
-        <button class="start-btn" onclick="window.location.href='stenographer.html'">START!</button>
+        <button class="start-btn" onclick="window.location.href='stenographer.html'">EXPLORE!</button>
+      </div>
+
+      <div class="subject">
+        <div class="icon royal"><i class="fas fa-chart-line"></i></div>
+        <div class="details">
+          <h3>Customer Analytics</h3>
+          <p>Analyze customer data and behavior to improve business strategies.</p>
+        </div>
+        <button class="start-btn" onclick="window.location.href='CA.html'">EXPLORE!</button>
+      </div>
+
+      <div class="subject">
+        <div class="icon indigo"><i class="fas fa-file-alt"></i></div>
+        <div class="details">
+          <h3>Business Report Writing</h3>
+          <p>Learn how to write effective and professional business reports.</p>
+        </div>
+        <button class="start-btn" onclick="window.location.href='businessreport.html'">EXPLORE!</button>
+      </div>
+
+      <div class="subject">
+        <div class="icon midnight"><i class="fas fa-gavel"></i></div>
+        <div class="details">
+          <h3>Negotiable Instrument</h3>
+          <p>Understand laws and principles governing negotiable financial instruments.</p>
+        </div>
+        <button class="start-btn" onclick="window.location.href='negotiable.html'">EXPLORE!</button>
+      </div>
+
+      <div class="subject">
+        <div class="icon cyan"><i class="fas fa-file-signature"></i></div>
+        <div class="details">
+          <h3>Legal Forms</h3>
+          <p>Learn about drafting and understanding various legal documents and forms.</p>
+        </div>
+        <button class="start-btn" onclick="window.location.href='legalforms.html'">EXPLORE!</button>
       </div>
     </section>
   </div>
 
   <script>
+    // highlight active link
     document.querySelectorAll(".nav-links li").forEach(li => {
       li.addEventListener("click", () => {
         document.querySelectorAll(".nav-links li").forEach(el => el.classList.remove("active"));
@@ -325,4 +368,3 @@
   </script>
 </body>
 </html>
-
